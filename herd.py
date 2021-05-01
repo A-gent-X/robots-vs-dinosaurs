@@ -1,13 +1,15 @@
-from dinosaurs import Dinosaur
+from dinosaurs import Dinosaurs
+
+dinosaurs = Dinosaurs()
 
 class Herd:
     def __int__(self):
         self.dinosaurs = {}
 
     def create_herd(self):
-        first_dinosaur = ({1:'Sharptooth'})
-        second_dinosaur = ({2: 'Steelhorn'})
-        third_dinosaur = ({3: 'Longneck'})
+        first_dinosaur = 'Sharptooth'
+        second_dinosaur = 'Steelhorn'
+        third_dinosaur = 'Longneck'
 
         self.dinosaurs.append(first_dinosaur)
         self.dinosaurs.append(second_dinosaur)

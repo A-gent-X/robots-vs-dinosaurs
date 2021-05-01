@@ -1,9 +1,11 @@
 from herd import Herd
-from dinosaurs import Dinosaurs
+from weapon import Dinosaurs
 from fleet import Fleet
 from robots import Robots
+from weapon import Weapon
 
 robots = Robots()
+weapon = Weapon()
 fleet = Fleet()
 dinosaurs = Dinosaurs()
 herd = Herd()
@@ -29,13 +31,21 @@ class Battlefield:
         "Strategize and strike precise!\n"
         print(self.intro)
 
-
-
-
-
-
-
-
-
-
-
+    battle_status = "A winner will stand after the war ends"
+    battle_field = "Land robots and dinosaurs will fight on"
+    while battle_status in battle_field:
+        if Herd > Fleet == True:
+            print("A robot self-destructs\n")
+        elif Herd > Fleet == False:
+            print("A dinosaur has fallen\n")
+        elif Herd in battle_field > Fleet == True:
+            print("Message to central base bring out the weapon a soldier has fallen\n")
+        elif Robots.Weapon in battle_field > Dinosaurs.Herd == True:
+            print("Robot solders obliterated the herd with their deadly weapon\n")
+        elif Robots.Fleet.Weapon <= Dinosaurs.Herd:
+            print("Dinosaurs are struggling to fend the lethal mechanized fleet\n")
+        elif Robots.Fleet.Weapon > Dinosaurs.Herd:
+            print("Another warrior has fallen in the herd\n")
+        else:
+            print("The dinosaur herd collapse from exhaustion\n"
+                  "Robot Fleet were unstoppable with their destructive weapon\n")

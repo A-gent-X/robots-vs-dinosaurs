@@ -1,5 +1,7 @@
 from weapon import Weapon
 
+weapon = Weapon()
+
 class Robots:
     def __init__(self, name):
         self.name = name
@@ -9,14 +11,3 @@ class Robots:
 
     def attack(self, dinosaur):
         dinosaur.health -= self.weapon.attack_power
-
-
-
-
-
-
-
-
-
-
-
